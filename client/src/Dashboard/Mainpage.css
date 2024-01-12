@@ -1,14 +1,16 @@
 .outerbox{
  width: 100vw;
  height: 100vh;
- background:aliceblue
+ background:aliceblue;
+ display: flex;
+ justify-content: space-evenly;
+ 
+ 
  
 }
 .class-form{
-  top: 20%;
-  left: 20% ;
-  position: relative;
-  
+   
+  padding-top:10% ;
   
   width: 800px;
   height: 500px;
@@ -18,9 +20,8 @@
 @media screen and (max-width: 1000px) {
   
   .class-form{
-    position: flex !important;
-    flex-direction: column !important;
     
+   
     width: 390px !important;
     height: 1020px !important;
     top: 10% !important;
@@ -35,29 +36,12 @@
   
 }
 
-@media screen and (max-width: 450px) {
-  
-  .hello{
-   
-    top: 3% !important;
-    left: 3% !important;
-  }
+
+@media screen and (max-width: 400px)  {
   .outerbox{
-    height: 125vh !important;
-    width: 100vw !important;
-    
+    width: 400px
   }
   
-}
-@media screen and (max-width: 700px)  {
-  
-  .class-form{
-    left: 9% !important;
-    top: 3% !important;
-  }
-  .outerbox{
-    height: 155vh !important; 
-  }
   
 }
 
@@ -86,48 +70,47 @@
  justify-content: space-between;
   position: relative;
 }
-h5 {
-  
+.sort>h5 {
   float: left;
+  
 }
 .option{
- 
-  
-  float: right;
-  position: relative;
-  flex-direction: column;
+  float: right;  
 }
 
-.search{
-  position: relative;
-  top:5vh
-}
+
 .box{
   justify-content: space-between;
   position: relative;
 }
 
+.sear{
+  padding-top: 40px;
+  color: rgb(23, 47, 47);
+  padding-left: 120px ;
+  
+}
+
 .inputsearch{
   float: right;
   
-  padding: 5px;
+  
   
 }
 
 .givename{
   float: left;
   
-  margin: 2px;
-  padding: 12px;
   
+ 
 }
 .searchfield{
-  top: 50px;
+  top: 20px;
   position: relative;
-  padding: 30px;
+  padding: 25px;
   width: 380px;
-  height: 300px;
-  
+  height: 200px;
+ 
 }
 .givename>p{
   padding: 8px;
@@ -142,10 +125,11 @@ h5 {
   
   padding:10px;
 }
-.box>h2{
+.box>h2 ,h4{
   margin: 10px;
   padding-left: 120px ;
 }
+
 .search-btn{
   
    padding-left: 30px;  
@@ -163,10 +147,10 @@ a:hover{
 .addstudent{
   width: 350px;
   height: 40px;
-  
+  top: 10px;
   position: relative;
   float: left;
-  top:-3px;
+  
   
 }
 .boxitem{
@@ -210,8 +194,8 @@ a:hover{
     height: 80px;
     border-radius: 40px;
     background-color: red;
-    float: right;
-    position: fixed;
+    
+    position:fixed;
     right: 20px;
     bottom: 20px;
 }

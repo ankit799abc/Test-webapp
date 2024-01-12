@@ -107,18 +107,24 @@ function Mainpage() {
          { Addstudent ?  <div className='box'>
            <h2>Apply Filter</h2>
            <div className='sort'>
-            <h5> Sort the list</h5>
+            <h5> Sort</h5>
            <select className='option' value={selectedOption} onChange={handleChange}>
-        <option value="2">Name incresing</option>
-        <option value="1">Name decresing</option>
-        <option value="3">Insert time incresing</option>
-        <option value="4">Update time incresing</option>
+        <option value="2">A-Z</option>
+        <option value="1">Z-A</option>
+        <option value="3">Last Modified</option>
+        <option value="4">Last Inserted</option>
       </select>
            </div>
-              
+              <h5 className='sear'>Search</h5>
            <div className='searchfield'>
-           <h5>Search the List</h5>
-            
+           
+           <div className='givename'>
+       
+       <p>Name: </p>
+       <p>Email: </p>
+       <p>Phone: </p>
+     </div >
+
            <div className='inputsearch'>
       
       <form >
@@ -137,13 +143,8 @@ function Mainpage() {
 
       </div>
       
-      <div className='givename'>
-       
-        <p>Name: </p>
-        <p>Email: </p>
-        <p>Phone: </p>
-      </div >
       
+    
       <div className='addstudent'>
    
         <p className='search-btn'> if you are add student? <a onClick={(e)=>setAddstudent(!Addstudent)}>Click </a> </p>
@@ -157,6 +158,14 @@ function Mainpage() {
           :     
           <div className='searchfield'>
           <h5>Add Student</h5>
+
+          <div className='givename'>
+      
+      <p>Name: </p>
+      <p>Email: </p>
+      <p>Phone: </p>
+    </div >
+
            
           <div className='inputsearch'>
      
@@ -176,12 +185,7 @@ function Mainpage() {
 
      </div>
      
-     <div className='givename'>
-      
-       <p>Name: </p>
-       <p>Email: </p>
-       <p>Phone: </p>
-     </div >
+     
            
      
 
@@ -215,7 +219,6 @@ function Mainpage() {
         </div>
 
       </div>
-      
       
       <div className='fotter' onClick={handleLogout}>
             <span className='fotterlog'>LogOut</span>
