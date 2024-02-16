@@ -105,12 +105,12 @@ const addController   =   async(req,res)=>{
             message: "User ALready exists",
           });
         }
-        if (req.body.phone.length!=10) {
+       /* if (req.body.phone.length!=10) {
           return res.status(200).send({
             success: false,
             message: "wrong phone no.",
           });
-        }
+        }*/
     
     
         //rest data

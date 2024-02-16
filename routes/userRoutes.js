@@ -13,6 +13,6 @@ router.post("/register", registerController);
 
 router.post("/login", loginController);
 
-router.get("/current-user", authMiddelware, currentUserController);
+router.get("/current-user",  currentUserController);
 
 module.exports = router;
